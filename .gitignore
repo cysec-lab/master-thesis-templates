@@ -17,3 +17,6 @@ out/*
 *.cb
 *.cb2
 .*.lb
+
+.cloudlatex/*
+!.cloudlatex/*.pdf

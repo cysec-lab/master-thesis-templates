@@ -1,6 +1,6 @@
-# 2024 年度秋セメスター 卒論 テンプレート
+# 2024 年度秋セメスター 修論 テンプレート
 
-本 branch は，立命館大学情報理工学部，2024 年度秋セメスター卒業論文のテンプレートです．
+本 branch は，立命館大学情報理工学部，2024 年度秋セメスター修士論文のテンプレートです．
 `Code <>`ボタン > `Download ZIP`ボタンからソースをダウンロードし，執筆環境を構築してください．
 
 ## TeX Live + VSCode + LaTeX Workshop の場合の LaTeX 環境構築
@@ -29,16 +29,16 @@ VS Code の User Snippets は，頻繁に使用するコードブロックを短
 推奨される VSCode 拡張機能を [.vscode/extensions.json](./.vscode/extensions.json)に記載しています．
 拡張機能メニューを開いて`@recommended` と入力し，インストールボタンをクリックすることでインストールできます．
 
-## Linterの使い方
+## Linter の使い方
 
-### ローカル環境でLintを行う
+### ローカル環境で Lint を行う
 
 必要なもの
 
-* Node.js
-  * 20以上を推奨
-* npmまたはyarnまたはpnpm
-  * おすすめはyarnとpnpmです
+- Node.js
+  - 20 以上を推奨
+- npm または yarn または pnpm
+  - おすすめは yarn と pnpm です
 
 ```bash
 cd scripts
@@ -56,13 +56,13 @@ pnpm i
 pnpm lint
 ```
 
-### リモート環境でLintを行う
+### リモート環境で Lint を行う
 
-[actions/workflowsページ](./actions/workflows/lint.yaml)を開いて，右上の`Run workflow`ボタンを押すと，リモート環境でLintが実行されます．
+[actions/workflows ページ](./actions/workflows/lint.yaml)を開いて，右上の`Run workflow`ボタンを押すと，リモート環境で Lint が実行されます．
 
-なお，この機能は`main`ブランチにLaTeXファイルがpushされたときにも自動で実行されます．
+なお，この機能は`main`ブランチに LaTeX ファイルが push されたときにも自動で実行されます．
 
-## 自動でPDFをGitHubにアップロードする
+## 自動で PDF を GitHub にアップロードする
 
 以下のコマンドを一度だけ実行してください．
 

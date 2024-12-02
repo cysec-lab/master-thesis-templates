@@ -1,4 +1,7 @@
 {
+    "[latex]": {
+      "editor.formatOnSave": false
+    },
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.latex.autoBuild.run": "onFileChange",
@@ -98,10 +101,19 @@
         "*.snm",
         "*.vrb",
     ],
+    "textlint.configPath": "scripts/package.json",
     // latex-workshop.view.pdf.viewer: PDF ビューアの開き方
     // VSCode 自体には PDF ファイルを閲覧する機能が備わっていないが、
     // LaTeX Workshop にはその機能が備わっている。
     // "tab" オプションを指定すると、今開いているエディタを左右に分割し、右側に生成されたPDFを表示するようにしてくれる
     // この PDF ビュアーは LaTeX のビルドによって更新されると同期して内容を更新してくれる。
-    "latex-workshop.view.pdf.viewer": "tab",
+
+    // Cloud LaTeX を使う場合
+    // "latex-workshop.view.pdf.viewer": "tab",
+    // "cloudlatex.projectId": <PROJECT_ID>,
+    // "cloudlatex.enabled": false, //true,
+    // "cloudlatex.outDir": "./.cloudlatex",
+    // "latex-workshop.latex.autoBuild.run": "never",
+    // "latex-workshop.latex.outDir": "./.cloudlatex",
+    // "cloudlatex.autoCompile": false,
 }

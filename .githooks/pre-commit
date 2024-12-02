@@ -1,2 +1,4 @@
 #!/bin/sh
-git add -f out/bachelor_thesis.pdf
+git add -f out/master_thesis.pdf
+# CloudLaTeX でビルドする場合
+# git add -f .cloudlatex/main.pdf

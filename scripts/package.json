@@ -1,11 +1,12 @@
 {
-  "name": "bachelor_thesis",
+  "name": "master_thesis",
   "version": "1.0.0",
-  "repository": "https://github.com/cysec-lab/bachelor-thesis-templates",
+  "repository": "https://github.com/cysec-lab/master-thesis-templates",
   "author": "cysec-lab",
   "scripts": {
     "lint": "textlint ../**/*.tex",
-    "lint-fix": "textlint ../**/*.tex --fix"
+    "lint-fix": "textlint ../**/*.tex --fix",
+    "count_char": "cat ../main.tex ../src/*.tex ../src/*.bib | wc -m | sed 's/ //g'"
   },
   "devDependencies": {
     "textlint": "^12.4.0",

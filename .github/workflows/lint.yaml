@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths:
-      - 'sections/**/*.tex'
-      - 'bachelor_thesis.tex'
+      - "sections/**/*.tex"
+      - "master_thesis.tex"
   workflow_dispatch:
 
 jobs:
